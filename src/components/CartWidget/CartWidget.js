@@ -1,7 +1,7 @@
-import cart from "./assets/cart-fill.svg"
+import cart from './assets/cart-fill.svg'
 
-const CartWidget =() =>{
-    return(
+const Carrito = () =>{
+    return (
         <div>
             <img src={cart} alt="cart-widget"/>
             0
@@ -9,4 +9,4 @@ const CartWidget =() =>{
     )
 }
 
-export default CartWidget
+export default Carrito;
