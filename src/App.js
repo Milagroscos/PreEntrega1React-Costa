@@ -3,18 +3,22 @@ import NavBar from './components/Navbar/navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import "bulma/css/bulma.css"
 import ItemCount from './components/ItemCount/ItemCount'
-
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import {Route }from 'react-router-dom'
+import {Routes} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <section className="hero is-warning">
-        <div className="hero-body">
-        <ItemListContainer greeting={"Bienvenidos"} className="title"/>
-        <ItemDetailContainer/>
-        <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}/>
-        </div>
-      </section>
-      <NavBar/>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+          <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
+          <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

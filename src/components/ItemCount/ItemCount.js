@@ -2,17 +2,17 @@ import './ItemCount.css'
 import {useState} from 'react'
 
 const ItemCount =({stock, initial, onAdd})=> {
-    const [quantity,setquantity] =useState(initial)
+    const [quantity,setQuantity] =useState(initial)
 
     const increment = () =>{
-        if (quantity<stock) {
-            setquantity(quantity+1)
+        if (quantity < stock) {
+            setQuantity(quantity+1)
         }
     }
 
     const decrement =() =>{
-        if(quantity>stock){
-            setquantity(quantity-1)
+        if(quantity > 1){
+            setQuantity(quantity-1)
         }
     }
     return(
