@@ -21,7 +21,7 @@ const products =[
         id:'3',
         name:'Mueble Cielo',
         price: 40000,
-        category: 'muebles exterior',
+        category: 'mueblesExterior',
         img:'https://w7.pngwing.com/pngs/603/658/png-transparent-garden-furniture-table-chair-sofa-angle-furniture-sofa.png',
         stock: 15,
         description: 'Descripcion de Mueble cielo'  
