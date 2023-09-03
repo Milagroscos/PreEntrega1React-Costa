@@ -1,3 +1,20 @@
+PROYECTO REACT.JS PARA CODERHOUSE
+Es un simulacion de una pagina eCommerce de muebles y decoracion para el hogar y el patio.
+
+Caracteristicas
+Se utilizaron diferentes librerias externas Desarrollado con create-react-app
+
+Librerias externas
+[react-router-dom] Se implemento para la navegacion entre paginas y categorias de productos.
+
+[Bulma] Se implemento para simplificar lineas de css y estilos.
+
+[Firebase] Se implemento para traer datos sin tener que enfocarse en el BackEnd. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
