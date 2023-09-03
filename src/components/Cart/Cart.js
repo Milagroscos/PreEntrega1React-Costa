@@ -1,7 +1,7 @@
 import './Cart.css'
 import { useContext } from 'react'
 import { CartContext } from '../Context/CartContext'
-import cartItem from '../CartItem/CartItem'
+import CartItem from '../CartItem/CartItem'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
@@ -18,10 +18,10 @@ const Cart = () => {
 
     else {
     return (
-        <div className='Container2 1'>
+        <div className='Container'>
                 <div className="font-card">
                 {
-                    cart.map(items => <cartItem key={items.id} items={items} />)
+                    cart.map(items => <CartItem key={items.id} items={items} />)
                 }
                 </div>
                 <div className='container-total'>

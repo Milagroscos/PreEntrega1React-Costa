@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import ItemList from '../ItemList/ItemList'
 import {useParams} from 'react-router-dom'
 
-import { getDoc, collection, query, where } from "firebase/firestore"
+import { getDocs, collection, query, where } from "firebase/firestore"
 import { db } from "../../components/services/firebase/firebaseConfig"
 
 const ItemListContainer =({greeting}) =>{
@@ -16,10 +16,10 @@ const ItemListContainer =({greeting}) =>{
         setLoading(true)
 
         const collectionRef=categoryId
-        ?query(collection(db,'products'), where('category', '==' , categoryId))
+        ? query(collection(db,'products'), where('category', '==' , categoryId))
         :collection(db,'products')
 
-        getDoc(collectionRef)
+        getDocs(collectionRef)
             .then(Response =>{
                 const productAdapted =Response.docs.map (doc => {
                     const data = doc.data()
@@ -38,7 +38,7 @@ const ItemListContainer =({greeting}) =>{
     return(
         <div>
             <h1>{greeting}</h1>
-            <ItemList products={products}/>
+            <ItemList products={products} loading={loading}/>
         </div>
     )
 }

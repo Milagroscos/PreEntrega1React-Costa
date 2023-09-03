@@ -1,6 +1,5 @@
 import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
-import {getProductById} from '../../asyncMock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { getDoc,doc } from 'firebase/firestore'
@@ -32,6 +31,19 @@ const ItemDetailContainer =() => {
             setLoading(false)
         })
     
-}, [itemId])}
+}, [itemId])
+
+return(
+      
+    <div className="ItemDetailContainer">
+        
+        <ItemDetail {...product} loading={loading} />
+
+        
+    </div>
+)
+
+}
+
 
 export default ItemDetailContainer
