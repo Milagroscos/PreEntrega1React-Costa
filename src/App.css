@@ -1,5 +1,12 @@
+*{font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .App {
   text-align: center;
+  background-color: tan;
 }
 
 .App-logo {

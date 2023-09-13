@@ -6,8 +6,8 @@ import { Timestamp, addDoc, collection, documentId, getDocs, writeBatch, where, 
 import CartItem from '../CartItem/CartItem'
 
 const Checkout = ( ) =>{
-    const{loading, setLoading} = useState(false)
-    const{orderId,setOrderId} = useState('')
+    const[loading, setLoading] = useState(false)
+    const[orderId,setOrderId] = useState('')
 
     const {cart, totalPrice, clearCart} = useContext(CartContext)
 

@@ -1,4 +1,8 @@
 .CardItem{
     border: 1px solid #9236b481;
     border-radius: 15px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }

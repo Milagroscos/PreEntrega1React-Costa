@@ -1,5 +1,11 @@
+*{font-family: 'Playfair Display', serif;
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   font-family: 'Space Grotesk', sans-serif;
+
+}
 .button1:hover {
-    background-color: #9336B4;
+    background-color: #565e35;
     color: white;
 }
 
